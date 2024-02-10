@@ -1,0 +1,1 @@
+import{p as a,j as e}from"./index-2WK1J2A3.js";const r="/assets/heading-bg-RSGdssa_.jpg";function i({title:s}){return e.jsx("div",{className:"page-heading normal-space",style:{backgroundImage:`url(${r})`},children:e.jsx("div",{className:"container mx-auto title",children:e.jsx("h2",{children:s})})})}i.propTypes={title:a.PropTypes.string.isRequired};export{i as P};
