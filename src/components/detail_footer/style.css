@@ -1,0 +1,114 @@
+.detail-footer {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  position: relative;
+}
+
+.detail-footer .first-item h5{
+  color: #fff;
+  text-align: left;
+}
+
+.detail-footer .first-item .contact-img-container {
+  display: flex;
+}
+
+.detail-footer .first-item .contact-img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.detail-footer .section-heading {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.detail-footer .item {
+  margin-top: 30px;
+  position: relative;
+}
+
+.detail-footer .item .icon {
+  width: 62px;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.detail-footer .item .icon img {
+  max-width: 31px;
+}
+
+.detail-footer .info-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.detail-footer p {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.detail-footer .second-item iframe{
+  margin-top: 15px;
+  height: 20rem !important;
+}
+
+.detail-footer .contact-info .contact-svg{
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.detail-footer .section-heading h2 {
+  margin-top: 10px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  background: -webkit-linear-gradient(#eee, #eb7a2a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+@media only screen and (max-width: 768.9px) {
+  .detail-footer .item {
+    text-align: center;
+    margin-top: 45px;
+  }
+  
+  .detail-footer .item .icon {
+    display: inline-block;
+  }
+
+  .detail-footer .section-heading h2 {
+    text-wrap: nowrap;
+    font-size: larger;
+  }
+
+  .detail-footer .contact-info {
+    text-align: center;
+  }
+
+  .detail-footer .info-text {
+    text-align: center;
+  }
+
+  .detail-footer .first-item h5{
+    text-align: center;
+  }
+
+  .detail-footer .first-item .contact-img-container {
+    justify-content: center;
+  }
+}

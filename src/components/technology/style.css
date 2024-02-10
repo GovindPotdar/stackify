@@ -1,0 +1,57 @@
+.technologies .item {
+  background-color: #282b2f;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  border-radius: 10px;
+  border: 1px solid #404245;
+  position: relative;
+}
+
+.technologies .item:hover {
+  background: linear-gradient(
+    to left,
+    hsl(252deg 97% 66%) 0%,
+    hsl(255deg 94% 65%) 27%,
+    hsl(257deg 92% 65%) 39%,
+    hsl(260deg 90% 64%) 47%,
+    hsl(262deg 89% 64%) 53%,
+    hsl(265deg 87% 64%) 61%,
+    hsl(267deg 85% 63%) 70%,
+    hsl(269deg 83% 63%) 82%,
+    hsl(271deg 81% 63%) 100%
+  );
+}
+
+.technologies .item .icon {
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  text-align: center;
+  line-height: 62px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.technologies .item .icon img {
+  max-width: 31px;
+}
+
+.technologies .item h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.technologies .technology-img:hover{
+  width: 300px;
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

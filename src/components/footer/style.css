@@ -1,0 +1,22 @@
+footer {
+  background: rgb(125,90,254);
+  background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
+  text-align: center;
+  padding: 25px 0px !important;
+  margin-top: 1px !important;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p a {
+  color: #fff;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+footer p a:hover {
+  color: #fff;
+  opacity: 0.75;
+}
