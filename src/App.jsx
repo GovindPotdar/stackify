@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <HashRouter basename='/'>
         <Header/>
         <Suspense fallback={<Loader/>}>
           <AppRoutes/>
