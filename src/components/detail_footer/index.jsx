@@ -1,18 +1,17 @@
-import detailFooter from '../../assets/images/detail-footer.jpg';
 import './style.css';
 import infoImg from '../../assets/images/detail_footer/info.png';
 import locationImg from '../../assets/images/detail_footer/location.png';
 import contactImg from '../../assets/images/detail_footer/contact.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
 import facebookImg from '../../assets/images/facebook.png';
 import instagramImg from '../../assets/images/instagram.png';
 import linkdinImg from '../../assets/images/linkedin.png';
 import twitterImg from '../../assets/images/twitter.png';
+import { contactUsLoadFeed } from '../../assets/feed/contact/data';
 
 function DetailFooter() {
   return (
-    <div className="detail-footer" style={{backgroundImage: `url(${detailFooter})`}}>
+    <div className="detail-footer">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -51,25 +50,19 @@ function DetailFooter() {
                 <img src={contactImg} alt="contact"/>
               </div>
               <div className='contact-info mt-3'>
-                <div className="row">
-                  <div className="col-12">
-                    <div className='d-flex flex-row'>
-                      <div className='contact-svg mx-2'><FontAwesomeIcon icon={faLocationDot} style={{color: "#FFD43B", width: '15px', height: '20px'}} /></div>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Dewas, Madhya Pradesh 455001.</p>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className='d-flex flex-row '>
-                      <div className='contact-svg mx-2'><FontAwesomeIcon icon={faMailBulk} style={{color: "#FFD43B", width: '15px', height: '20px'}} /></div>
-                      <a href="mailto:admin@stackify.org"><p>admin@stackify.org</p></a>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className='d-flex flex-row'>
-                      <div className='contact-svg mx-2'><FontAwesomeIcon icon={faPhone} style={{color: "#FFD43B", width: '15px', height: '20px'}} /></div>
-                      <a href="Tel:+91 999999-99999"><p>+91 999999-99999</p></a>
-                    </div>
-                  </div>
+                <div className="row">                   
+                   {
+                    contactUsLoadFeed.map((feed)=>{
+                      return(
+                        <div className="col-12" key={feed.title}>
+                          <div className='d-flex flex-row'>
+                            <div className='contact-svg mx-2'><FontAwesomeIcon icon={feed.icon} style={{color: "#FFD43B", width: '15px', height: '20px'}} /></div>
+                            <a href="Tel:+91 999999-99999"><p>{feed.text}</p></a>
+                          </div>
+                        </div>
+                      )
+                    })
+                   }
                 </div>
               </div>
             </div>
