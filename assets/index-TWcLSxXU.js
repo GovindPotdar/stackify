@@ -1,0 +1,1 @@
+import{p as r,j as e}from"./index-HiY7EFD0.js";function i({title:s}){return e.jsx("div",{className:"page-heading normal-space",children:e.jsx("div",{className:"container mx-auto title",children:e.jsx("h2",{children:s})})})}i.propTypes={title:r.PropTypes.string.isRequired};export{i as P};
