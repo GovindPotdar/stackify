@@ -1,0 +1,14 @@
+.project-selection-container button {
+    color: #fff;
+    border-color: #7453fc;
+}
+
+.project-selection-container button:hover {
+    color: #fff;
+    background-color: #7453fc;
+}
+
+.project-selection-container .active-button {
+    color: #fff;
+    background-color: #7453fc;
+}
