@@ -1,0 +1,1 @@
+import{P as s,j as i,L as n}from"./index-A_9cSEm7.js";function o({text:e,to:r,classes:t}){return i.jsx("div",{className:`custom-link ${t}`,children:i.jsx(n,{to:r,children:e})})}o.propTypes={text:s.string.isRequired,to:s.string.isRequired,classes:s.string.isRequired};export{o as C};
