@@ -57,7 +57,7 @@ function DetailFooter() {
                         <div className="col-12" key={feed.title}>
                           <div className='d-flex flex-row'>
                             <div className='contact-svg mx-2'><FontAwesomeIcon icon={feed.icon} style={{color: "#FFD43B", width: '15px', height: '20px'}} /></div>
-                            <a href="Tel:+91 999999-99999"><p>{feed.text}</p></a>
+                            <a href={feed.link} target='_blank' rel="noreferrer"><p>{feed.text}</p></a>
                           </div>
                         </div>
                       )
